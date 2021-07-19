@@ -1,0 +1,31 @@
+{
+  "name": "search-cli-app",
+  "version": "0.0.0",
+  "description": "search cli application",
+  "main": "app.js",
+  "engines": {
+    "node": "12.21.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon -q main",
+    "test": "jest --watch"
+  },
+  "keywords": [
+    "search",
+    "cli"
+  ],
+  "author": "Phillipe Alves",
+  "license": "ISC",
+  "dependencies": {
+    "boxen": "^5.0.1",
+    "chalk": "^4.1.1",
+    "clear": "^0.1.0",
+    "inquirer": "^8.1.2",
+    "lolcatjs": "^2.4.1"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6",
+    "nodemon": "^2.0.12"
+  }
+}
