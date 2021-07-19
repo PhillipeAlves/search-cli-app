@@ -1,6 +1,6 @@
 const chalk = require('chalk')
 const clear = require('clear')
-const { NotFound } = require('../ui')
+const { NotFound, Header } = require('../ui')
 const { logError } = require('../ui/uiHelperFunctions')
 const { isValidArray } = require('../utils')
 const { getDataToRender } = require('./outputHelpersFunctions')
@@ -8,6 +8,7 @@ const { showResults } = require('./showResults')
 
 const output = ({ searchResults, searchType, searchValue, resultsPerPage, criteriaRefs, map }) => {
   clear()
+  Header()
 
   try {
     if (isValidArray({ data: searchResults })) {

@@ -1,10 +1,15 @@
+const clear = require('clear')
 const { getUserInput } = require('./inputHelperFunctions')
 const { getDataMap } = require('../data/dataHelperFunctions')
 const { logError } = require('../ui/uiHelperFunctions')
 const { getCriteriaRefs } = require('../output/outputHelpersFunctions')
 const { isValidArray } = require('../utils')
+const { Header } = require('../ui')
 
 const prompt = async () => {
+  clear()
+  Header()
+
   const userInput = {
     searchType: '',
     match: '',

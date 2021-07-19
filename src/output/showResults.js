@@ -1,5 +1,4 @@
 const inquirer = require('inquirer')
-const { Header } = require('../ui')
 const { render, logError } = require('../ui/uiHelperFunctions')
 const { renderResults } = require('./renderResults')
 
@@ -9,7 +8,6 @@ const showResults = ({ searchValue, dataToRender, resultsPerPage = 5 }) => {
     let results = resultsPerPage
     let index = 0
 
-    Header()
     render({
       content: `\n   Found ${totalResults} ${
         totalResults === 1 ? 'result' : 'results'
